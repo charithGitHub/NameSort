@@ -35,7 +35,7 @@ namespace NameSorter.UnitTest
         [TestMethod]
         public void TestValidateFileExtentionWithBlankExtention()
         {
-            Assert.IsFalse(!string.IsNullOrEmpty(ValidateFileType("")));
+            Assert.IsFalse(string.IsNullOrEmpty(ValidateFileType("")));
         }
 
         private string ValidateFileType(string fileExt)
