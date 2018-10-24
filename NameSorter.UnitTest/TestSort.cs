@@ -24,13 +24,13 @@ namespace NameSorter.UnitTest
         [TestMethod]
         public void TestWithValidText()
         {
-            Assert.IsTrue(SortNames("Dan Avantha\r\nSome Charith\r\nSam John\r\nCharith Rodrigo\r\nDonkey zeee").Count == 0);
+            Assert.IsTrue(SortNames("Dan Avantha\r\nSome Charith\r\nSam John\r\nCharith Rodrigo\r\nDonkey zeee").Count > 0);
         }
 
         [TestMethod]
         public void TestWithInValidText()
         {
-            Assert.IsTrue(SortNames("Dan AvanthaSome Charith<nSam John>Charith Rodrigo-Donkey zeee").Count == 0);
+            Assert.IsTrue(SortNames("Dan AvanthaSome Charith<nSam John>Charith Rodrigo-Donkey zeee").Count == 1);
         }
 
         private List<string> SortNames(string text)

@@ -27,7 +27,7 @@ namespace NameSorter.UnitTest
         [TestMethod]
         public void TestWithValidText()
         {
-            Assert.IsTrue(GetNames("Dan Avantha\r\nSome Charith\r\nSam John\r\nCharith Rodrigo\r\nDonkey zeee").Count == 0);
+            Assert.IsTrue(GetNames("Dan Avantha\r\nSome Charith\r\nSam John\r\nCharith Rodrigo\r\nDonkey zeee").Count > 0);
         }
 
         [TestMethod]
