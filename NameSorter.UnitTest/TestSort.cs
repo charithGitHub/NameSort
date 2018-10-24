@@ -20,7 +20,9 @@ namespace NameSorter.UnitTest
         {
             Assert.IsTrue(SortNames("").Count == 0);
         }
-
+        /// <summary>
+        /// Test for Valid Test
+        /// </summary>
         [TestMethod]
         public void TestWithValidText()
         {
