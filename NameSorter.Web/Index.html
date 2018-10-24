@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/Utils.js"></script>
+    <script src="Scripts/NameSorter.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="namesorter">
+            <h2>Name Sorter</h2>
+            <div class="form-group">
+                <label for="fileUpload" class="sr-only">Upload Text File With Names</label>
+                <!--<input type="text" id="tfn" size="40" class="form-control input-lg" placeholder="Enter the TFN" autocomplete="off" required="" autofocus="">-->
+                <input id="fileUpload" class="form-control input-lg" type="file" />
+            </div>
+            <a href="" style="display: none;" id="link" download="code.txt">Download Sorted Names</a>
+            <p id="result" style="display: none;"></p>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
